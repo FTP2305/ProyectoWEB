@@ -6,7 +6,7 @@
   }
   
   .tmñproductoGrande {
-    height: 235px;
+    height: 300px;
     width: 700PX;
   }
   
@@ -21,15 +21,6 @@
   
   .logo {
     height: 90px;
-  }
-  
-  .btn-categorias {
-    background-color: #ffcc00;
-    border: none;
-    padding: 8px 16px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
   }
   
   .search-input {
@@ -142,7 +133,7 @@
   .productos-destacados div {
     flex: 1;
     background: #ddd;
-    height: 250px;
+    height: 350px;
     border-radius: 10px;
     min-width: 300px;
     display: flex;
@@ -197,7 +188,7 @@
   }
   
   footer a {
-    color: #ffcc00;
+    color: #ffffff;
     text-decoration: none;
   }
   
@@ -210,4 +201,9 @@
     margin-top: 30px;
     font-size: 12px;
     color: #aaa;
+  }
+  .redes-sociales{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
   }
