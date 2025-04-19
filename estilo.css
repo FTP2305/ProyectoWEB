@@ -201,75 +201,6 @@
     color: #aaa;
   }
 
-HEAD
-
-  .contenedor-central {
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color:#ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .contenedor-titular{
-    width: 70%;
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .texto-titu{
-    text-align: center;
-  }
-
-  .p{
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  .img{
-    margin-top: 18px;
-    margin-left: 60px;
-    border-radius: 10px;
-    margin-bottom: 22px;
-  }
-
-  .contenedor-horizontal {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  table {
-    border: 1px solid #ccc;
-    border-collapse: separate;
-    border-radius: 15px;
-    overflow: hidden;
-    width: 270px;
- 
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 400;
-    background-color: white;
-    border: 1px solid #ddd;
-  }
-  
-  .color{
-    background-color: #e9b408;
-    border-collapse: separate;
-    border-radius: 15px;
-  }
-
   .redes-sociales{
     display: flex;
     gap: 10px;
@@ -407,3 +338,75 @@ HEAD
     background: #ddd;
   }
   
+  main {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contenedor-central {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color:#f0ecec;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .contenedor-titular{
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .texto-titu{
+    text-align: center;
+  }
+
+  .p{
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .img{
+    margin-top: 18px;
+    margin-left: 60px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+  }
+
+  .contenedor-horizontal {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  table {
+    border: 1px solid #ccc;
+    border-collapse: separate;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 270px;
+ 
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: white;
+    border: 1px solid #ddd;
+  }
+  
+  .color{
+    background-color:#ffcc00;
+    border-collapse: separate;
+    border-radius: 15px;
+  }
