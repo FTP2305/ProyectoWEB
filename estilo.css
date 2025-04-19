@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
   .tmñproducto {
     height: 150px;
     width: 250px;
@@ -9,12 +15,18 @@
   }
   
   .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: #e9b408;
     padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
   
   .logo {
@@ -339,7 +351,7 @@
   }
   
   main {
-    padding-top: 30px;
+    padding-top: 130px;
     display: flex;
     justify-content: center;
   }
