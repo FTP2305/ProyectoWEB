@@ -4,6 +4,8 @@
     box-sizing: border-box;
   }
   
+  -- css GENERALES Y HOME --
+
   body {
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
@@ -186,7 +188,7 @@
     font-size: 12px;
     color: #aaa;
   }
-  
+  -- css NOSOTROS --
   .nosotros {
     padding: 40px 20px;
     background-color: #f9f9f9;
@@ -233,5 +235,87 @@
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #ccc;
+  }
+  -- css PRODUCTOS --
+  .productos-page {
+    display: flex;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+  
+  .filtros {
+    flex: 0 0 220px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ddd;
+  }
+  
+  .filtros h3, .filtros h4 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .filtros label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .precio-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn-filtrar {
+    width: 100%;
+    background: #ffcc00;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .contenido-productos {
+    flex: 1;
+  }
+  
+  .barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .barra-superior h2 {
+    color: #333;
+  }
+  
+  .barra-superior select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+  }
+  
+  .producto {
+    background: #eee;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #ccc;
+    cursor: pointer;
+  }
+  
+  .producto:hover {
+    background: #ddd;
   }
   
