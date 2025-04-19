@@ -1,12 +1,10 @@
- 
-  /* Additional styles for your e-commerce site */
   .tmñproducto {
     height: 150px;
     width: 250px;
   }
   
   .tmñproductoGrande {
-    height: 235px;
+    height: 300px;
     width: 700PX;
   }
   
@@ -21,15 +19,6 @@
   
   .logo {
     height: 90px;
-  }
-  
-  .btn-categorias {
-    background-color: #ffcc00;
-    border: none;
-    padding: 8px 16px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
   }
   
   .search-input {
@@ -142,7 +131,7 @@
   .productos-destacados div {
     flex: 1;
     background: #ddd;
-    height: 250px;
+    height: 350px;
     border-radius: 10px;
     min-width: 300px;
     display: flex;
@@ -197,7 +186,7 @@
   }
   
   footer a {
-    color: #ffcc00;
+    color: #ffffff;
     text-decoration: none;
   }
   
@@ -212,6 +201,7 @@
     color: #aaa;
   }
 
+HEAD
 
   .contenedor-central {
     width: 80%;
@@ -279,3 +269,141 @@
     border-collapse: separate;
     border-radius: 15px;
   }
+
+  .redes-sociales{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+
+  .nosotros {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .nosotros .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .nosotros-section {
+    margin-bottom: 50px;
+  }
+  
+  .nosotros-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .texto {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .texto h1, .texto h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .texto p {
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .imagen {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+  }
+  
+  .imagen img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+  }
+
+  .productos-page {
+    display: flex;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+  
+  .filtros {
+    flex: 0 0 220px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ddd;
+  }
+  
+  .filtros h3, .filtros h4 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .filtros label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .precio-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn-filtrar {
+    width: 100%;
+    background: #ffcc00;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .contenido-productos {
+    flex: 1;
+  }
+  
+  .barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .barra-superior h2 {
+    color: #333;
+  }
+  
+  .barra-superior select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+  }
+  
+  .producto {
+    background: #eee;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #ccc;
+    cursor: pointer;
+  }
+  
+  .producto:hover {
+    background: #ddd;
+  }
+  
