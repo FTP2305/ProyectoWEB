@@ -507,6 +507,45 @@
     gap: 160px;
   }
 
+  .enfila2{
+    display: flex;
+    gap: 80px;
+  }
+
+  .enfila3{
+    display: flex;
+    gap: 30px;
+  }
+
   .imgpequeña{
     width: 10%;
   }
+
+  .campo-largo1{
+    width: 480px;
+  }
+
+  .campo-largo2{
+    width: 140px;
+  }
+
+  .campo-largo3{
+    width: 480px;
+    height: 90px;
+  }
+
+  .miboton{
+    width: 100px;
+    height: 40px;
+    box-shadow: 0 2px 8px gray;
+    background-color: #e9b408;
+    border-radius: 20px;
+
+  }
+
+  .centro-boton {
+    display: flex;
+    justify-content: center;
+ 
+  }
+  
