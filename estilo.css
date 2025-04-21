@@ -31,6 +31,7 @@
     padding: 10px 20px;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   
   .logo {
@@ -235,6 +236,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   
   .footer-columns > div {
@@ -279,6 +281,7 @@
   .nosotros {
     padding: 40px 20px;
     background-color: #f9f9f9;
+    box-shadow: 0 2px 8px gray;
   }
   
   .nosotros .container {
@@ -410,6 +413,7 @@
     padding-top: 130px;
     display: flex;
     justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
   .contenedor-central {
@@ -418,9 +422,19 @@
     margin: 0 auto;
     background-color:#f0ecec;
     padding: 30px;
-    border-radius: 10px;
     box-shadow: 0 2px 8px gray;
   }
+
+  .contenedor-central1{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color:black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px black;
+  }
+
 
   .contenedor-titular{
     width: 70%;
@@ -456,12 +470,9 @@
   }
   
   table {
-    border: 1px solid #ccc;
-    border-collapse: separate;
-    border-radius: 15px;
     overflow: hidden;
     width: 270px;
- 
+    box-shadow: 0 2px 8px gray;
   }
   
   th, td {
@@ -470,31 +481,29 @@
     font-size: 14px;
     font-weight: 400;
     background-color: white;
-    border: 1px solid #ddd;
   }
   
   .color{
     background-color:#ffcc00;
-    border-collapse: separate;
-    border-radius: 15px;
+
   }
 
   .contenedor-izquierda{
     width: 40%;
-    margin-top: 30px;   /* Deja espacio arriba */
+    margin-top: 30px; 
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px gray;
+    box-shadow: 0 2px 8px white;
   }
 
   .contenedor-izquierda2{
     width: 60%;
-    margin-top: 30px;   /* Deja espacio arriba */
-    background-color: #ffffff;
+    margin-top: 30px; 
+    background-color: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px gray;
+    box-shadow: 0 2px 8px white;
   }
 
   .enfila{
@@ -507,6 +516,70 @@
     gap: 160px;
   }
 
+  .enfila2{
+    display: flex;
+    gap: 80px;
+  }
+
+  .enfila3{
+    display: flex;
+    gap: 30px;
+  }
+
   .imgpequeña{
     width: 10%;
+  }
+
+  .campo-largo1{
+    width: 480px;
+  }
+
+  .campo-largo2{
+    width: 140px;
+  }
+
+  .campo-largo3{
+    width: 480px;
+    height: 90px;
+  }
+
+  .miboton{
+    width: 100px;
+    height: 40px;
+    box-shadow: 0 2px 8px gray;
+    background-color: #e9b408;
+    border-radius: 20px;
+
+  }
+
+  .centro-boton {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imagen-superpuesta {
+    position: absolute;
+    top: 300px;       
+    left: 1020px;      
+    bottom: 10px;    
+    width: 350px;    
+    z-index: 999;    
+  }
+  
+  .imagen-superpuesta1 {
+    position: absolute;
+    top: 500px;       
+    left: 1050px;     
+    bottom: 10px;    
+    width: 350px;    
+    z-index: 999;    
+  }
+
+  .imagen-superpuesta2 {
+    position: absolute;
+    top: 700px;       
+    left: 1020px;     
+    bottom: 10px;    
+    width: 350px;    
+    z-index: 999;    
   }
