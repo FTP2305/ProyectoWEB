@@ -394,7 +394,7 @@
   
   .producto {
     background: #eee;
-    height: 200px;
+    min-height: 200px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px #ccc;
     cursor: pointer;
@@ -403,6 +403,47 @@
   .producto:hover {
     background: #ddd;
   }
+
+  .producto-imgcat{
+    height: 120px;
+    object-fit: contain;
+    margin: auto;
+  }
+  .producto-centrado {
+    text-align: center;
+  }
+  .producto-info{
+    text-align: center;
+    margin-top: 10px
+  }
+  .producto-descripcion{
+    color: #333; 
+    font-size: 16px; 
+  }
+  .producto-centrado {
+    text-align: center;
+  }
+  .producto-descripcion{
+    color: #333; 
+    font-size: 12px;
+    font-weight: bold; 
+    margin: 10px;
+  }
+  .producto-precio{
+    color: #333; 
+    font-size: 14px;
+    font-weight: bold; 
+    margin: 10px;
+  }
+  .producto-especific{
+    color: #333; 
+    font-size: 11px;
+    font-weight: bold;
+    text-align: justify;
+    padding: 6px;
+    margin: 10px;
+  }
+  
   
   main {
     padding-top: 130px;
@@ -424,7 +465,7 @@
     width: 80%;
     max-width: 1000px;
     margin: 0 auto;
-    background-color:black;
+    background-color:rgb(201, 199, 199);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 2px 8px black;
@@ -552,31 +593,15 @@
     justify-content: center;
   }
   
-  .imagen-superpuesta {
-    position: absolute;
-    top: 300px;       
-    left: 1020px;      
-    bottom: 10px;    
-    width: 350px;    
-    z-index: 999;    
-  }
-  
   .imagen-superpuesta1 {
     position: absolute;
-    top: 500px;       
-    left: 1050px;     
+    top: 430px;       
+    left: 1000px;     
     bottom: 10px;    
-    width: 350px;    
+    width: 450px;    
     z-index: 999;    
   }
 
-  .imagen-superpuesta2 {
-    position: absolute;
-    top: 700px;       
-    left: 1020px;     
-    bottom: 10px;    
-    width: 350px;    
-    z-index: 999;    
-  }
+  
 
   
