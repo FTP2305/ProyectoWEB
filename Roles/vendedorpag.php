@@ -18,29 +18,38 @@ if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'vendedor') {
 </head>
 <body>
     <header class="navbar">
-        <a href="#" class="logo">
-            <img src="../IMG/LOGOITIII.jpeg" alt="Logo Titishop" /> TITISHOP Vendedor
-        </a>
-        <nav>
+        <div class="navbar-container">  <a href="#" class="logo">
+            TiTiShop - Vista de Vendedor
+            </a>
+            <nav>
             <ul class="nav-links">
-                <li><a href="#">Registrar Venta <i class="fas fa-cash-register"></i></a></li>
-                <li><a href="#">Consultar Stock <i class="fas fa-boxes"></i></a></li>
-                <li><a href="#">Historial de Ventas <i class="fas fa-history"></i></a></li>
-                <li><a href="../logout.php">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></a></li>
+            <li><a href="../logout.php">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></a></li>
             </ul>
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <main class="dashboard-content">
-        <section class="welcome-section">
-            <h1>¡Bienvenido, Vendedor <?php echo htmlspecialchars($_SESSION['usuario_nombre']); ?>!</h1>
-            <p>Aquí podrás gestionar tus ventas y consultar información de productos.</p>
-            <h3>Tus Actividades Recientes</h3>
-            <ul>
-                <li><strong>Ventas registradas hoy:</strong> X</li>
-                <li><strong>Última venta:</strong> Producto Y a las HH:MM</li>
-                <li><strong>Meta de ventas semanal:</strong> Z% alcanzada</li>
-            </ul>
+        <section id="welcome-overview-section" class="dashboard-section">
+            <div class="welcome-section">
+                <h1>¡Bienvenido, <?php echo htmlspecialchars($_SESSION['usuario_nombre']); ?>!</h1>
+                <p>Este es el panel de ventas de Titishop. Aquí puedes gestionar todos las ventas del negocio.</p>
+            </div>
+
+            <div class="action-buttons">
+                <a href="registroventas.php" class="action-button">
+                    <div class="icon-circle"><i class="fas fa-box"></i></div>
+                    Registro de ventas
+                </a>
+                <a href="consultar_stock.php" class="action-button" >
+                    <div class="icon-circle"><i class="fas fa-users"></i></div>
+                    Consultar Stock
+                </a>
+                <a href="historial.php" class="action-button" onclick="showSection('register-user-section'); return false;">
+                    <div class="icon-circle"><i class="fas fa-user-plus"></i></div>
+                    Historial de ventas
+                </a>
+            </div>
         </section>
     </main>
 </body>

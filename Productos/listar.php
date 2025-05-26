@@ -4,7 +4,6 @@ include '../Includes/conexion.php';
 $conexion = new Conexion();
 $conn = $conexion->getConectar();
 
-// Consulta para listar productos con categoría
 $sql = "SELECT p.id_producto, p.nombre, p.precio, p.stock, c.nombre_categoria 
         FROM productos p
         INNER JOIN categorias c ON p.id_categoria = c.id_categoria";
@@ -30,7 +29,7 @@ $resultado = $conn->query($sql);
             <div class="menus">
                 <a href="../Productos/listar.php">Productos</a>
                 <a href="../Cliente/listar.php">Clientes</a>
-                <a href="../Usuarios/login.php">Usuarios</a>
+                <a href="../Usuarios/listar.php">Usuarios</a>
                 <a href="#">Ventas</a>
                 <a href="#">Reportes</a>
             </div>
@@ -68,7 +67,6 @@ $resultado = $conn->query($sql);
                     </tbody>
                 </table>
             </div>
-            <!-- Aquí podrías mostrar botones u opciones extra si lo deseas -->
         </div>
     </div>
 </div>

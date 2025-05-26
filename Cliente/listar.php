@@ -30,8 +30,8 @@ $resultado = $conn->query($sql);
             <div class="menuDerecha">
                 <div class="menus">
                     <a href="../Productos/listar.php">Productos</a>
-                    <a href="../clientes/">Clientes</a>
-                    <a href="#">Usuarios</a>
+                    <a href="../Cliente/listar.php">Clientes</a>
+                    <a href="../Usuarios/listar.php">Usuarios</a>
                     <a href="#">Ventas</a>
                     <a href="#">Reportes</a>
                 </div>

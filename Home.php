@@ -55,7 +55,7 @@ session_start();
     <div class="banner-texto">
       <h1>TiTiShop: Lo mejor en tecnología, con delivery rápido a todo Lima y provincias. ¡Tu próximo gadget está a un clic! </h1>
       <p>TiTiShop: Tecnología que te conecta, precios que te sorprenden. </p>
-      <a href="Productos.html">
+      <a href="Productos.php">
       <button>Catálogo</button>
       </a>
     </div>
@@ -139,20 +139,20 @@ session_start();
   <footer>
     <div class="footer-columns">
       <div>
-        <h4><a href="Contactanos.html" >Contáctanos</a></h4>
+        <h4><a href="Contactanos.php" >Contáctanos</a></h4>
         <p>WhatsApp: +51 123 456 789</p>
         <p>Atención: Lun-Sáb 9am-6pm</p>
       </div>
       <div>
-        <h4><a href="Nosotros.html" >Sobre Nosotros</a></h4>
-        <p><a href="Nosotros.html" >¿Quiénes somos?</a></p>
-        <p><a href="Nosotros.html" >Misión</a></p>
-        <p><a href="Nosotros.html" >Visión</a></p>
+        <h4><a href="Nosotros.php" >Sobre Nosotros</a></h4>
+        <p><a href="Nosotros.php" >¿Quiénes somos?</a></p>
+        <p><a href="Nosotros.php" >Misión</a></p>
+        <p><a href="Nosotros.php" >Visión</a></p>
       </div>
       <div>
         <h4><a href="">Políticas de empresa</a></h4>
         <p><a href="">Política de garantía</a></p>
-        <p><a href="Preguntas.html">Devolución y cambio</a></p>
+        <p><a href="Preguntas.php">Devolución y cambio</a></p>
         <p><a href="">Privacidad</a></p>
         <p><a href="">Envíos</a></p>
       </div>

@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['form_type']) && $_POST
                 <ul class="nav-links">
                     <li><a href="..//Home.php" onclick="showSection('welcome-overview-section'); return false;">Inicio</a></li>
                     <li><a href="..//Productos/listar.php">Productos</a></li>
-                    <li><a href="#" >Ventas</a></li>
+                    <li><a href="historial.php" >Ventas</a></li>
                     <li><a href="../intranet.php?logout=true">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></a></li>
                 </ul>
             </nav>
@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['form_type']) && $_POST
                     <div class="icon-circle"><i class="fas fa-user-plus"></i></div>
                     Registrar Nuevo Usuario
                 </a>
-                <a href="#" class="action-button" onclick="showSection('sales-management-section'); return false;">
+                <a href="historial.php" class="action-button">
                     <div class="icon-circle"><i class="fas fa-dollar-sign"></i></div>
                     Gestión de Ventas
                 </a>

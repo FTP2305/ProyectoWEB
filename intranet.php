@@ -60,11 +60,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <div class="container">
         <div class="illustration-section">
-            <img src="IMG/LOGOITIII.jpeg" alt="Ilustración de Bienvenida" />
+            <img src="" alt="Ilustración de Bienvenida" />  /*FALTA AGREGAR IMAGEN*/
         </div>
         <div class="auth-section">
             <div class="auth-header">
-                <img src="IMG/LOGOITIII.jpeg" alt="Logo Titishop" class="titishop-logo" />
+                <img src="img/LOGOTITI.jpeg" alt="Logo Titishop" class="titishop-logo" />
                 <h2>La intranet de Titishop</h2>
                 <p>Tu experiencia de gestión de ventas y productos</p>
             </div>
@@ -79,7 +79,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label for="correo">Correo electrónico</label>
                     <div class="input-wrapper">
                         <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required />
-                        <span class="icon">&#9993;</span>
                     </div>
                 </div>
 
@@ -87,13 +86,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label for="contrasena">Contraseña</label>
                     <div class="input-wrapper">
                         <input type="password" id="contrasena" name="contrasena" placeholder="Ingresa tu contraseña" required />
-                        <span class="icon">&#128065;</span>
                     </div>
                 </div>
 
-                <a href="#" class="forgot-password">Restablecer contraseña</a>
 
                 <button type="submit" class="btn-auth">Iniciar Sesión</button>
+
+                <div class="centered">
+                    <h3><a href="Home.php" style="color: black;">Volver a Inicio</a></h3>
+                </div>
             </form>
         </div>
     </div>
