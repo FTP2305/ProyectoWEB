@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,26 +13,36 @@
 
   <!-- ENCABEZADO -->
   <header>
-    <div class="navbar">
-      <img src="img/LOGOTITI.jpeg" alt="Logo TITI SHOP" class="logo">
-      <h3><a href="Home.html" style="color: black;" >Inicio</a></h3>
-      <h3><a href="Productos.html" style="color: black;" >Productos</a></h3>
-      <h3><a href="Contactanos.html" style="color: black;" >Contáctanos</a></h3>
-      <h3><a href="Nosotros.html" style="color: black;" >Nosotros</a></h3>
-      <h3><a href="Preguntas.html" style="color: black;">Preguntas Frecuentes</a></h3>
-      <div class="user-menu">
-        <a href="#">
-          <img src="img/loginsinfondo.png" alt="Usuario" class="icono"> 
+  <div class="navbar">
+    <img src="img/LOGOTITI.jpeg" alt="Logo TITI SHOP" class="logo">
+    <h3><a href="Home.php" style="color: black;">Inicio</a></h3>
+    <h3><a href="Productos.php" style="color: black;">Productos</a></h3>
+    <h3><a href="Contactanos.php" style="color: black;">Contáctanos</a></h3>
+    <h3><a href="Nosotros.php" style="color: black;">Nosotros</a></h3>
+    <h3><a href="Preguntas.php" style="color: black;">Preguntas Frecuentes</a></h3>
+    
+    <div class="user-menu">
+      <?php if (isset($_SESSION['nombre'])): ?>
+        <span style="color:black; font-weight: bold; font-size: 20px; margin-right:10px;">
+          Hola! <?php echo htmlspecialchars($_SESSION['nombre']); ?>
+        </span>
+        <a href="logout.php" style="margin-left: 20px;">
+          <img src="img/cerrarsesion1-removebg-preview.png" alt="Cerrar sesión" class="icono" >
         </a>
-        <a href="#">
-          <img src="img/historial de compras.png" alt="Historial" class="icono">
+      <?php else: ?>
+        <a href="http://localhost/ProyectoWEB/Cliente/Login.php">
+          <img src="img/loginsinfondo.png" alt="Usuario" class="icono">
         </a>
-        <a href="#">
-          <img src="img/carrocomprassinfondo.png" alt="Carro de Compras" class="icono">
-        </a>
-      </div>
+      <?php endif; ?>
+      <a href="#">
+        <img src="img/historial de compras.png" alt="Historial" class="icono">
+      </a>
+      <a href="#">
+        <img src="img/carrocomprassinfondo.png" alt="Carro de Compras" class="icono">
+      </a>
     </div>
-  </header>
+  </div>
+</header>
 
 
   <!-- BANNER PRINCIPAL -->
