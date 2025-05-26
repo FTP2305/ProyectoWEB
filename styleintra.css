@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f0f2f5; /* Light grey background */
+    background-color: #f0f2f5;
     color: #333;
 }
 
@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e6f7ff; /* Light blue background for illustration */
+    background-color: #e6f7ff; 
     padding: 20px;
 }
 
@@ -34,7 +34,7 @@ body {
     border-radius: 8px;
 }
 
-/* Renombramos de .login-section a .auth-section para ser más genérico */
+
 .auth-section {
     flex: 1;
     padding: 40px;
@@ -43,20 +43,20 @@ body {
     justify-content: center;
 }
 
-/* Renombramos de .login-header a .auth-header */
+
 .auth-header {
     text-align: center;
     margin-bottom: 30px;
 }
 
 .titishop-logo {
-    max-width: 180px; /* Adjust size as needed */
+    max-width: 180px; 
     margin-bottom: 15px;
 }
 
 .auth-header h2 {
     font-size: 2.2em;
-    color: #007bff; /* Titishop blue */
+    color: #007bff; 
     margin-bottom: 10px;
 }
 
@@ -65,7 +65,7 @@ body {
     color: #666;
 }
 
-/* Renombramos de .login-form p a .auth-form p */
+
 .auth-form p {
     font-size: 1.1em;
     margin-bottom: 25px;
@@ -91,24 +91,23 @@ body {
     position: relative;
 }
 
-/* Ajustado para incluir 'email' y 'select' si los usaremos en el futuro */
+
 .input-wrapper input[type="text"],
 .input-wrapper input[type="email"],
 .input-wrapper input[type="password"],
 .input-wrapper select {
-    width: calc(100% - 40px); /* Adjust for icon padding */
+    width: calc(100% - 40px); 
     padding: 12px 15px;
-    padding-right: 40px; /* Space for icon */
+    padding-right: 40px; 
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1em;
     box-sizing: border-box;
 }
 
-/* Estilo para el select cuando no tiene icono (si aplica) */
 .input-wrapper select:not(.has-icon) {
     width: 100%;
-    padding-right: 15px; /* Eliminar el padding extra del icono si no hay icono */
+    padding-right: 15px; 
 }
 
 
@@ -150,7 +149,7 @@ body {
     text-decoration: underline;
 }
 
-/* Renombramos de .btn-login a .btn-auth */
+
 .btn-auth {
     width: 100%;
     padding: 15px;
@@ -164,8 +163,8 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.btn-auth.register { /* Clase específica para el botón de registro, por si se usa después */
-    background-color: #28a745; /* Verde para registrar */
+.btn-auth.register { 
+    background-color: #28a745; 
 }
 
 .btn-auth.register:hover {
@@ -184,10 +183,10 @@ body {
     }
 
     .illustration-section {
-        display: none; /* Hide illustration on smaller screens */
+        display: none; 
     }
 
-    /* Renombramos */
+    
     .auth-section {
         padding: 30px;
     }
@@ -198,7 +197,7 @@ body {
     }
 }
 
-/* Estilos para mensajes de error y éxito */
+
 .error-message, .success-message {
     padding: 10px;
     margin-bottom: 20px;

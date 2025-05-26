@@ -20,6 +20,7 @@ session_start();
     <h3><a href="Contactanos.php" style="color: black;">Contáctanos</a></h3>
     <h3><a href="Nosotros.php" style="color: black;">Nosotros</a></h3>
     <h3><a href="Preguntas.php" style="color: black;">Preguntas Frecuentes</a></h3>
+    <h3><a href="intranet.php" style="color: black;">Intranet</a></h3>
     
     <div class="user-menu">
       <?php if (isset($_SESSION['nombre'])): ?>

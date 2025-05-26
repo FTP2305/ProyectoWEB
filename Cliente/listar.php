@@ -1,11 +1,10 @@
 <?php 
 include '../Includes/conexion.php';
 
-// Crear instancia de la clase Conexion
 $conexion = new Conexion();
 $conn = $conexion->getConectar();
 
-// Búsqueda de cliente por nombre
+
 $sql = "SELECT * FROM clientes";
 if (isset($_POST['buscar'])) {
     $busqueda = $_POST['nombre_cliente'];
@@ -20,11 +19,10 @@ $resultado = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clientes</title>
-    <link rel="stylesheet" href="clientelist.css"> <!-- Asegúrate que el CSS esté bien enlazado -->
+    <link rel="stylesheet" href="clientelist.css"> 
 </head>
 <body>
     <div class="contenedor">
-        <!-- Menú -->
         <div class="menu">
             <div class="menuIzquierda">
                 <span class="title">Tienda Admin</span> 
@@ -40,11 +38,10 @@ $resultado = $conn->query($sql);
             </div>
         </div>
 
-        <!-- Contenido -->
+ 
         <div class="contenido">
             <h2 class="centrar">📋 Listado de Clientes</h2>
             <div class="tabla" style="gap: 30px; align-items: flex-start;">
-                <!-- Tabla de clientes -->
                 <div class="tablaLeft" style="width: 65%;">
                     <table>
                         <thead>
@@ -74,7 +71,6 @@ $resultado = $conn->query($sql);
                     </table>
                 </div>
 
-                <!-- Formulario de búsqueda -->
                 <div class="tablaRight" style="width: 30%;">
                     <div style="background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
                         <h3 style="text-align: center; margin-bottom: 15px;">🔍 Buscar Cliente</h3>

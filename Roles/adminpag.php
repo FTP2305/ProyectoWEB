@@ -1,13 +1,12 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'admin') {
-    // Redirige al login.php, que ahora está en la raíz de ProyectoWEB.
-    header('Location: ../intranet.php'); // <--- CORRECCIÓN DE RUTA
+if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'admin') { 
+    header('Location: ../intranet.php'); 
     exit();
 }
 
-include '../Includes/conexion.php'; // Esta ruta ya estaba correcta
+include '../Includes/conexion.php'; 
 
 $conexion = new Conexion();
 $conn = $conexion->getConectar();
@@ -15,7 +14,6 @@ $conn = $conexion->getConectar();
 $mensaje_registro = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['form_type']) && $_POST['form_type'] === 'register_user') {
-    // ... (la lógica de registro de usuario es la misma) ...
     $nombre = trim($_POST["nombre"]);
     $correo = trim($_POST["correo"]);
     $contrasena_plana = trim($_POST["contrasena"]);
@@ -66,21 +64,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['form_type']) && $_POST
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel de Administrador - Titishop</title>
-    <link rel="stylesheet" href="../estilo.css"> <link rel="stylesheet" href="admin.css"> <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilo.css"> 
+    <link rel="stylesheet" href="admin.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <header class="navbar">
-        <a href="#" class="logo" onclick="showSection('welcome-overview-section'); return false;">
-            TiTiShop Vista de Administrador
-        </a>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="Home.php" onclick="showSection('welcome-overview-section'); return false;">Inicio</a></li>
-                <li><a href="#" onclick="showSection('product-management-section'); return false;">Productos</a></li>
-                <li><a href="#" onclick="showSection('sales-management-section'); return false;">Ventas</a></li>
-                <li><a href="../intranet.php?logout=true">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></a></li> </ul>
-        </nav>
+        <div class="navbar-container">
+            <a href="#" class="logo" onclick="showSection('welcome-overview-section'); return false;">
+                TiTiShop - Vista de Administrador
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="..//Home.php" onclick="showSection('welcome-overview-section'); return false;">Inicio</a></li>
+                    <li><a href="..//Productos/listar.php">Productos</a></li>
+                    <li><a href="#" >Ventas</a></li>
+                    <li><a href="../intranet.php?logout=true">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="dashboard-content">

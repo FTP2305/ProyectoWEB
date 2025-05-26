@@ -12,7 +12,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $conexion = new Conexion();
     $conn = $conexion->getConectar();
 
-    // Verificar si el correo ya existe
     $verificar = "SELECT * FROM clientes WHERE correo = '$correo'";
     $verificado = $conn->query($verificar);
 

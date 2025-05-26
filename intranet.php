@@ -1,7 +1,5 @@
 <?php
 session_start();
-
-// Incluir el archivo de conexión a la base de datos (ajusta ruta si es necesario)
 include 'Includes/conexion.php';
 
 $conexion = new Conexion();
@@ -9,8 +7,6 @@ $conn = $conexion->getConectar();
 
 $mensaje_error = "";
 
-
-// Procesar formulario login
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $correo = trim($_POST["correo"]);
     $contrasena = trim($_POST["contrasena"]);

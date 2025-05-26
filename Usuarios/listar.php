@@ -1,11 +1,8 @@
 <?php 
 include '../Includes/conexion.php';
-
-// Crear instancia de la clase Conexion
 $conexion = new Conexion();
 $conn = $conexion->getConectar();
 
-// Búsqueda de cliente por nombre
 $sql = "SELECT * FROM usuarios";
 if (isset($_POST['buscar'])) {
     $busqueda = $_POST['nombre_usuario'];
@@ -24,7 +21,6 @@ $resultado = $conn->query($sql);
 </head>
 <body>
     <div class="contenedor">
-        <!-- Menú -->
         <div class="menu">
             <div class="menuIzquierda">
                 <span class="title">Tienda Admin</span> 
@@ -40,7 +36,6 @@ $resultado = $conn->query($sql);
             </div>
         </div>
 
-        <!-- Contenido -->
         <div class="contenido">
             <h2 class="centrar">📋 Listado de Usuarios</h2>
             <div class="tabla" style="gap: 30px; align-items: flex-start;">

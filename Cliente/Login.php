@@ -2,7 +2,7 @@
 session_start();
 include '../Includes/conexion.php';
 
-// Procesar login
+
 $mensaje = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $correo = $_POST['email'];
@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $cliente = $resultado->fetch_assoc();
         $_SESSION['id_cliente'] = $cliente['id_cliente'];
         $_SESSION['nombre'] = $cliente['nombre'];
-        header("Location: ..//Home.php"); // Redirige a la página principal u otra
+        header("Location: ..//Home.php"); 
         exit();
     } else {
         $mensaje = "Correo o contraseña incorrectos.";
@@ -35,7 +35,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <link rel="stylesheet" href="..//estilo.css">
 </head>
 <body>
-  <!-- ENCABEZADO -->
   <header>
     <div class="navbar">
       <img src="..//img/LOGOTITI.jpeg" alt="Logo TITI SHOP" class="logo">
@@ -52,7 +51,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
   </header>
 
-  <!-- CUERPO PRINCIPAL -->
   <main>
     <div class="container">
       <div class="logo-central">
@@ -79,7 +77,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
   </main>
 
-  <!-- PIE DE PÁGINA -->
   <footer>
     <div class="footer-columns">
       <div>
