@@ -54,13 +54,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Titishop Intranet - Iniciar Sesión</title>
-    <link rel="stylesheet" href="styleintra.css" />
+    <link rel="stylesheet" href="styleintra.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
         <div class="illustration-section">
-            <img src="img/Banner_intranet" alt="Ilustración de Bienvenida" />
+            <img src="img/Banner_intranet.png" alt="Ilustración de Bienvenida"/>
         </div>
         <div class="auth-section">
             <div class="auth-header">

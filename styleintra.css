@@ -23,9 +23,7 @@ body {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #e6f7ff; 
-    padding: 20px;
+    background-color: #e6f7ff;
 }
 
 .illustration-section img {
