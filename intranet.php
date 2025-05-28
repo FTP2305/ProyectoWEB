@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <div class="container">
         <div class="illustration-section">
-            <img src="" alt="Ilustración de Bienvenida" />  /*FALTA AGREGAR IMAGEN*/
+            <img src="img/Banner_intranet" alt="Ilustración de Bienvenida" />
         </div>
         <div class="auth-section">
             <div class="auth-header">
