@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <!-- FORMULARIO -->
   <main>
     <div class="form-container">
-      <h2>REGÍSTRATE</h2>
+      <h2>REGISTRO</h2>
       <form method="POST" action="">
         <label for="nombres">Nombres</label>
         <input type="text" id="nombres" name="nombres" required>
