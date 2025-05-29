@@ -388,17 +388,28 @@
   
   .grid-productos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas grandes */
     gap: 15px;
+  }
+
+  @media (max-width: 1200px) {
+      .grid-productos {
+          grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+      }
+  }
+
+  @media (max-width: 768px) {
+      .grid-productos {
+          grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+      }
   }
   
   .producto {
-    background: #eee;
-    min-height: 200px;
+    background: #f4f4f4;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px #ccc;
-    cursor: pointer;
-  }
+    text-align: center;
+}
   
   .producto:hover {
     background: #ddd;
