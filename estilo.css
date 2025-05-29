@@ -536,7 +536,7 @@
   
   .color{
     background-color:#ffcc00;
-
+    font-weight: bold;
   }
 
   .contenedor-izquierda{
@@ -956,6 +956,14 @@ input[type="password"] {
   .footer-columns h4{
     font-size: 20px;
   }
+  /*FQA*/
+  .img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 22px;
+    margin-left: 0;
+    padding: 0px 20px;
+  }
 }
 /*FALTA 768 y 480 en HOME*/
 
@@ -977,6 +985,12 @@ input[type="password"] {
   .footer-columns p{
     font-size: 14px;
   }
+
+/*FQA*/
+  .contenedor-central{
+    margin-top: 8%;
+  }
+
 }
 @media (max-width: 480px){
 /*NOSOTROS*/
@@ -1005,6 +1019,34 @@ input[type="password"] {
     margin-top: 50%;
   }
 
+/*FQA*/
+  .contenedor-central{
+    margin-top: 55%;
+  }
+  .img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 22px;
+    margin-left: 0;
+    padding: 0;
+    margin-top: 0px;
+  }
+
+  .texto-titu{
+    font-size: 20px;
+  }
+  .contenedor-titular{
+    padding: 9px;
+  }
+  .p{
+    font-size: 16px;
+  }
+  .color{
+    font-size: 11px;
+  }
+  th{
+    font-size: 11px;
+  }
 /*FOOTER*/
   .footer-columns h4{
     font-size: 16px;
