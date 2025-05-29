@@ -25,15 +25,15 @@ $resultado = $conn->query($sql);
     <div class="contenedor">
         <div class="menu">
             <div class="menuIzquierda">
-                <span class="title">Tienda Admin</span> 
+                <span class="title">Tienda TITISHOP</span> 
             </div>
             <div class="menuDerecha">
                 <div class="menus">
                     <a href="../Productos/listar.php">Productos</a>
                     <a href="../Cliente/listar.php">Clientes</a>
                     <a href="../Usuarios/listar.php">Usuarios</a>
-                    <a href="#">Ventas</a>
-                    <a href="#">Reportes</a>
+                    <a href="../Roles/registroventas.php">Ventas</a>
+                    <a href="../Roles/historial.php">Reportes</a>
                 </div>
             </div>
         </div>
