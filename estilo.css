@@ -601,22 +601,27 @@
     width: 450px;    
     z-index: 999;    
   }
-  .container {
-  text-align: center;
-  }
-  .logo {
-     height: 100px;
-     
-  }
-    
-  .logo-central {
-    margin-bottom: 15px;
-  }
 
-    .logo-central img {
-      width: 150px;
-      height: auto;
-    }
+.logo {
+  height: 100px;
+}
+
+.container_login {
+  text-align: center;
+  width: 360px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+    
+.logo-central {
+  margin-bottom: 25px;
+}
+
+.logo-central img {
+  width: 140px;
+  height: auto;
+}
 
     
 .logo-header img {
@@ -624,11 +629,13 @@
     height: auto;
 }
 .login-box {
-  border: 1px solid #ccc;
+  
   padding: 30px;
   max-width: 300px;
+  width: 100%;
   margin: 0 auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .login-box h3 {
@@ -670,16 +677,17 @@ input[type="password"] {
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
+  font-size: 18px;
 }
 
 .ingresar {
-  background-color: #d35454;
-  color: white;
+  background-color: #FFC60B;
+  color: black;
 }
 
 .registrarse {
-  background-color: #f28b82;
-  color: white;
+  background-color: #FBDA6F;
+  color: black;
 }
 a.btn {
   display: inline-block;
@@ -689,11 +697,12 @@ a.btn {
 
 .form-container {
   background-color: #ffffff;
-  margin-top: 70px;
+  margin-top: 50px;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  max-width: 300px;
+  width:100%;
 }
 
 h2 {
@@ -706,13 +715,12 @@ label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="password"],
-input[type="date"] {
+input[type="password"] {
   width: 100%;
   padding: 8px;
   margin-bottom: 15px;
@@ -723,17 +731,120 @@ input[type="date"] {
 
 .submit-btn {
   width: 100%;
-  background-color: #e84c4c;
-  color: white;
+  background-color: #FFC60B;
+  color: black;
   padding: 10px;
   border: none;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;
 }
 
-.submit-btn:hover {
-  background-color: #d64040;
-}
+/*Resposive-Login*/
+@media (max-width: 1024px) {
+  .container_login {
+    width: 90%;
+    max-width: 300px;
+    padding: 1.5rem 1rem;
+    margin: 0 auto; 
+  }
 
+  .logo-central {
+    width: 100%;       
+    text-align: center; 
+    margin-bottom: 1rem;
+  }
+
+  .logo-central img {
+    width: 140px;
+    max-width: 100%;    
+    display: inline-block;
+  }
+
+  .login-box {
+    width: 100%; 
+    box-sizing: border-box;
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .container_login {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .logo-central {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+
+  .logo-central img {
+    width: 100px;
+    height: auto;
+  }
+  h2 {
+    font-size: 19px;
+  }
+  .login-box {
+    width: 80%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .forgot-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .btn{
+    font-size: 14px;
+  }
+  label{
+    font-size: 14px;
+  }
+  /*Barra de navegación*/
+  .logo {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  a{
+    font-size: 16px;
+  }
+  .user-menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .user-menu img.icono {
+    width: 30px;
+    height: auto;
+  }
+}
+@media (max-width: 480px){
+  /*Barra de navegación*/
+  .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items:flex-start;
+  }
+  /*Login*/
+  h3{
+    margin: 5px;
+  }
+  .container_login{
+    margin-top: 40%;
+  }
+  /*Registro*/
+  .form-container{
+    margin-top: 50%;
+  }
+
+}

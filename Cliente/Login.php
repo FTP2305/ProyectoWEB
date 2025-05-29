@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TITI SHOP | Iniciar Sesión</title>
-  <link rel="stylesheet" href="..//estilo.css">
+  <link rel="stylesheet" href="../estilo.css">
 </head>
 <body>
   <header>
@@ -52,11 +52,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   </header>
 
   <main>
-    <div class="container">
+    <div class="container_login">
       <div class="logo-central">
         <img src="../img/LOGOTITI.jpeg" alt="Logo TITI SHOP">
       </div>
       <div class="login-box">
+        <h2>INICIO DE SESIÓN</h2>
         <form method="POST" action="Login.php">
           <label for="email">Correo electrónico</label>
           <input type="email" id="email" name="email" required>
