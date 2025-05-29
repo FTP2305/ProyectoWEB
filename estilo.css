@@ -949,6 +949,7 @@ input[type="password"] {
   .texto{
     padding: 12px;
   }
+/*FOOTER*/
   .footer-columns p{
     font-size: 19px;
   }
@@ -963,6 +964,18 @@ input[type="password"] {
   .nosotros{
     padding: 60px 50px;
     margin: 48px 15px 10px 15px;
+  }
+  
+  /*PRODUCTOS*/
+  .productos-page{
+    margin-top: 5%;
+  }
+  /*FOOTER*/
+  .footer-columns h4{
+    font-size: 16px;
+  }
+  .footer-columns p{
+    font-size: 14px;
   }
 }
 @media (max-width: 480px){
@@ -985,5 +998,18 @@ input[type="password"] {
   }
   .redes-sociales img{
     width:40px;
+  }
+
+/*PRODUCTOS*/
+  .productos-page{
+    margin-top: 50%;
+  }
+
+/*FOOTER*/
+  .footer-columns h4{
+    font-size: 16px;
+  }
+  .footer-columns p{
+    font-size: 14px;
   }
 }
