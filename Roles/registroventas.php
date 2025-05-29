@@ -9,7 +9,7 @@ $conn = $conexion->getConectar();
 $mensaje = "";
 
 
-if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'vendedor') {
+if (!isset($_SESSION['rol']) || ($_SESSION['rol'] !== 'vendedor' && $_SESSION['rol'] !== 'admin')) {
     header('Location: ../intranet.php');
     exit();
 }

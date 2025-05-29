@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['form_type']) && $_POST
     } elseif ($rol !== "admin" && $rol !== "vendedor") {
         $mensaje_registro = "Rol no permitido. Solo 'admin' o 'vendedor' son válidos.";
     } else {
-        $contrasena_hasheada = password_hash($contrasena_plana, PASSWORD_DEFAULT);
+        //$contrasena_hasheada = password_hash($contrasena_plana, PASSWORD_DEFAULT);
 
         $check_sql = "SELECT id_usuario FROM usuarios WHERE correo = ?";
         $stmt_check = $conn->prepare($check_sql);
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['form_type']) && $_POST
                 $insert_sql = "INSERT INTO usuarios (nombre, correo, contrasena, rol) VALUES (?, ?, ?, ?)";
                 $stmt_insert = $conn->prepare($insert_sql);
                 if ($stmt_insert) {
-                    $stmt_insert->bind_param("ssss", $nombre, $correo, $contrasena_hasheada, $rol);
+                    $stmt_insert->bind_param("ssss", $nombre, $correo, $contrasena_plana, $rol);
                     if ($stmt_insert->execute()) {
                         $mensaje_registro = "Usuario '" . htmlspecialchars($nombre) . "' registrado exitosamente.";
                     } else {
