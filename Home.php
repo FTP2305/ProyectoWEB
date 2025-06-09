@@ -47,7 +47,7 @@ session_start();
 
 
   <!-- BANNER PRINCIPAL -->
-   <main></main>
+  <main></main>
   <section class="banner">
     <div class="banner-img">
       <img src="img/BANER_HOME.jpg" alt="" class="tmñbanner">
@@ -161,13 +161,13 @@ session_start();
         <p>Facebook / TikTok / Instagram</p>
         <div class="redes-sociales">
           <a href="Facebook.com">
-            <img src="img/logofb.avif" alt="Facebook" width="50">
+            <img src="img/fb_sinfondo.png" alt="Facebook">
           </a>
           <a href="TikTok.com">
-            <img src="img/logotktok.jpg" alt="TikTok" width="50">
+            <img src="img/tiktok_sinfondo.png" alt="TikTok">
           </a>
           <a href="Instagram.com">
-            <img src="img/intalogo.avif" alt="Instagram" width="50">
+            <img src="img/logo_insta_sinfondo.png" alt="Instagram">
           </a>
         </div>
       </div>
