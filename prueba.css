@@ -97,6 +97,7 @@ h2 {
     font-size: 18px;
     font-weight: bold;
     color: #333;
+    
 }
 
 /* Ajustes para pantallas más pequeñas */
@@ -111,3 +112,4 @@ h2 {
         grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
     }
 }
+
